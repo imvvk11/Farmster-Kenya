@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "farmster-ee483",
+  "private_key_id": "d070527196d4a90de99839769ded6a3445d08603",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDtJ+tb6TDVlp2d\n4cPkfDUrJbs4z5mBuiL/sw5Ze2vQlctVys0o2qg0lSusnKH36jqW2CzI8CWehKLK\nO83ZAg149bO2r7LA5NB9VfHGdm63r5J+Wdu7mzhPfid0MF4ZITfok/TsZVCoEsLa\n3PBmnfGzdwC5QouWqVgYns4+qzsnCRUjn1h3R22SaeFkoxF69GASWCdTniI4vw3x\ng2B7HNwQNSRAPUYym8PPrCeNS7m95mI3VUs0q0VKSp3G6IztonfOqXIcEdTxYOeN\nxrrDxihKZESKa21tZaHGCLIw6yShdzNbTpUu0CM7gp8cF0BNuquoaYLODZ6iqcyO\nWpW5CO55AgMBAAECggEAJesIjBkESFo9GEXFKu6bF6uAPEyhGCdZOjX4WOFNczvI\nF48F737KfyHMqlwe34MxW/XzbytKcIZ3estGFejom4r5cX+1HndXSHrp3dgIytDF\nJPOcGOpv/fHHQCINoYn4pPSnJ/bpBv587j5+J4IgZ5fi4zwbEntADSuzAT0ih5Jy\n4eOQvgo446viBSmj3qhFTucrlkx+aKWIwHQuCeUhpWKgAmpQhVnalcTpE7j17oOP\nwNRRpUW9Bkf1an6o9P2UnToJqx9nxIzu5YGEwFLC021+Qlmk7JuTVEOE42Xj7WtY\nVOI3fvwwlYORNUZ6hJZWkNTaeC9k3MloiXuL3a5hSwKBgQD7pc0tNa5gyQbbc7rY\nVTpDo0oU94464shTAmVvESBhD8/g0x3nxi0SyNaMzeijZZIUIsKQHqW6m0bzuIvg\n5r86LQBjDiu9PbOPdBS0K02NjMVJGeZPLHA9lW4o7O4B967dTHdrDvU5LaSSNHE3\nI4JLtrrMjp7GpiJN4tc0MgYbkwKBgQDxQfRCWmiLQZfAtvo0IbqmPqVAN6Iw96Me\nH8Xema7/ItYseO1PsynC1XjCIIkyIsn7hL8JeHgXYZSrZqQ4IofH5B8Dnd5mReEg\nfBffSj4pcxxoAJ3DKBy9LwHTn4+//bujXT0CDX2fdh91fEtXQcZzC4ILcys99Pk2\njWmGRBnNQwKBgQCGcDmA4aDbTApByz4SvNV3tRCqyuZNR0LGNg2CnJ+zuwLPlXnw\njMsfsfQNHSQfxu+XmkpfPEBFxRbOtdTkveGDbu85/CQZ4ZDAHr/A0TGJYZ80QoXr\n3k3IWMCVVJ6CppPg3i0eIMuZVG0LPsENOAcv89sv1TG15qOFAJ7/34mryQKBgQDc\nRVd6bYkd+9lN/sIabuE3f+Lo6uKOysqHaoMCZla8Y1YgbJhfODlcxgLnW0VoHRNF\nLUIup2seDd3rUF+HUR+fhcw7RRwVTJ/rROGW4PY4afz5h/aChFEY+Z41VW2t4UA8\nO5jEEwUrXnIClmVDWa6Sw2MMiS5l9xDCmgJKsErOeQKBgFaCpHBWGS7g0GmD82xe\nZdo7LTFm44cwhmoHo+HOjmDfbYlVq1s6dvEwaxSDWICPZU78lHvxBJ6WgWarbIfb\n4Q0jlperQ+uQoMOzp6K6URN7dvYgttg+DeuPT9bFirbanLU0NM0f/UQEleYi6IS3\nEencGyebbAFTo715T457/HMO\n-----END PRIVATE KEY-----\n",
+  "client_email": "bucket@farmster-ee483.iam.gserviceaccount.com",
+  "client_id": "107174605855273108783",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bucket%40farmster-ee483.iam.gserviceaccount.com"
+}

@@ -1,0 +1,4 @@
+cron:
+- description: "daily expire crop listings job"
+  url: /en/crop-listings/expire/
+  schedule: every 24 hours

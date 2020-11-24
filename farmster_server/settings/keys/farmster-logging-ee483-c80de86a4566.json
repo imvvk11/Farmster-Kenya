@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "farmster-ee483",
+  "private_key_id": "c80de86a4566b3d943581420b9f1bec3cf302189",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDRPt81DKzxF5Sc\n7B8r5Q2aLkuesJdySKm+5i4sOdeFLQFGnuIswwRYYo/VBXF5e8Ye24+Ywlh/3lQp\noL0mLHAvZNl59+dBTkd6LZzSj2qfH22bspiIo/CovvPvNNs0KdiMdJUkxJsTdPCa\n1FJoI19Z72vdjSAfdOv5qqGdNcfSQAua3hnmbiNlN3InG2SC4CVEgFUPNzzOWK8N\niOy0NHQM/NinB5pL4guyy8LfwDDqd/8vn4N+NJXRQtYyg2svtPQLkYFqV7sKI4H6\nDODH8sqNjDqx3QcJnZp5LKyd/oETCt5q9TuErgnWGTLpiYp2yNkNgw8YTTe3UDnH\n/DfxxoYBAgMBAAECggEAW4anRsKhISIB4PQNnHsoDIFklWjEDfrHuRdhKfoxEfFC\nJhxYbWDuVSTjqjejz5I68oNyl8ymvmPHJ6BGLFzyw2BXGlk7/95YOJKcDqQp7Klo\nHdssilQ/b+h6te7GVVZagPF7zWXsOUIE/oyR8ThLvICUC4hv/SJ9F6ux3pzIJ2gO\n0BLKxrIF5CMaIaPqF0H0xcAXg48dq93igNiJ6XiaG2r+/jgkI1gwxt0Tra9rivNi\nQUTC2tgI4nql0O5LO906sDhFrIqLOw4OnLq66/XHWVu1jHbcIc/iRMZFL4qkHIjm\n6WQdq3T4WAEfAiODlHzofd5JAW66+RI9x7ge8wdJiwKBgQDpRRaXJ+WWR2VCTuUp\nccn1queUnSHK8RxJS6deUsWsWi2uwjfi2FvTD4CB2uq0USkdaLiNBwi76lSeLBjV\nE3tOKLxaLHe+qKW1zpXZEtLGwuhV14ii1As013Mzut5osa9HR9tYWsHQeFbe2cVX\nDs4jfSmGAgd5DisyJPeeWRtXBwKBgQDlon+cIPOOvq2Ht2bM7G1r0KcxsZX7FAOH\n1VAg73bdoY4UnY9W5tDYmL1bGPGtdknmxsyimtAju6rgnV92VJbJMmW43piF9uEM\nFxeIYwJhoTiVgpu4one1R489wvANq9vKIF0eU4TN4tM6k6KgHVA2YXji6i+cpaRe\nOsn+VUYwtwKBgQCek6Dv0Od6ab6kfQ28RuaMY0pa9Rbr50zbZtq4fHx01jkH/HAR\nfhOuP3OU00WKn0HcBDyxYn7FgF9Vx5R6BWxljbu9cU1WBz/fgDjOAMXY6NcYxBTW\n3F9h5LUkDXz0nxYQ1wB95/Spy6UCifhlXmM0LPn1Z5u856zlwcuzkc/MMQKBgHQr\nCqdvPAdgiuT3cPgGOyypt4s6LYeBDnAvB4RB4D4qtnfTZWovBkQssM5fBhQcnTI0\nK92ut9D75WwP8PUpwcYyyqcFZN+QjzTQkcUbYV8GclugYSq8dhatBtfVwB8Ka/wK\n91CaK7sEHpupiEG70pJQKRmSI1f5q/dHglw5w3JtAoGAQR69/CDSPMQOM2UeEkYz\nnjgQusoUhjIsL5ledXZvE0W7V0AaaiN3JYaOaCq7wdZXphNim5Mv41XVOQN4thIr\nUW/8YDj0Y1qe8BVpL02p/a8OVZKVkljD/Gf1gN4/wa/XAO8JFijwgGplyFzF1lEb\ndqFQcabmNb3jmbLN2mZ6kS0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "logging@farmster-ee483.iam.gserviceaccount.com",
+  "client_id": "118054039993077970770",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/logging%40farmster-ee483.iam.gserviceaccount.com"
+}

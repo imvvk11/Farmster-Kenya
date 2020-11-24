@@ -1,0 +1,68 @@
+# https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-16-04
+# https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-uwsgi-and-nginx-on-ubuntu-16-04
+
+$ sudo add-apt-repository universe
+$ sudo add-apt-repository ppa:certbot/certbot
+$ sudo apt-get update
+$ sudo apt-get -y upgrade
+$ sudo apt-get install -y python3.6-dev python3-pip nginx gettext software-properties-common python-certbot-nginx libpq-dev postgresql postgresql-contrib build-essential tcl
+$ sudo -H pip3 install virtualenv virtualenvwrapper uwsgi
+
+
+$ echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.bashrc
+$ echo "export WORKON_HOME=~/Env" >> ~/.bashrc
+$ echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bashrc
+$ source ~/.bashrc
+
+$ mkvirtualenv farmster-venv
+$ echo "workon farmster-venv" >> ~/.bashrc
+
+# switch to postgress user
+$ sudo -i -u postgres
+$ createdb farmster_prod
+$ createuser --superuser --pwprompt farmster_admin
+
+# install redis
+got to -> https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-18-04
+
+$ mkdir farmster
+$ cd farmster
+$ git clone https://bitbucket.org/mixinapps/farmster-server.git
+$ cd farmster-server/settings/
+$ echo "from .staging import *" >> ./local_settings_loader.py.py
+$ cd farmster-server/setup/
+$ pip install -r requirements.txt
+$ deactivate
+
+$ sudo mkdir -p /etc/uwsgi/sites
+$ sudo mkdir -p /var/log/uwsgi
+
+$ sudo cp ~/farmster/farmster-server/setup/uwsgi/sites/farmster.ini /etc/uwsgi/sites/farmster.ini
+$ sudo cp ~/farmster/farmster-server/setup/systemd/system/uwsgi.service /etc/systemd/system/uwsgi.service
+$ sudo cp ~/farmster/farmster-server/setup/nginx/sites-available/farmster /etc/nginx/sites-available/farmster
+$ sudo ln -s /etc/nginx/sites-available/farmster /etc/nginx/sites-enabled
+
+$ sudo systemctl start uwsgi
+
+$ sudo ufw delete allow 8080
+$ sudo ufw allow 'Nginx Full'
+
+$ sudo systemctl enable nginx
+$ sudo systemctl enable uwsgi
+
+$ chmod +x manage.py
+$ ./manage.py migrate
+
+$ sudo certbot --nginx
+
+$ chmod +x ./auto_update.sh
+
+
+# Install supervisord http://supervisord.org/installing.html
+$ sudo apt install supervisor
+$ sudo cp ~/farmster/farmster-server/setup/supervisor/supervisord.conf /etc/supervisor/supervisord.conf
+$ sudo cp ~/farmster/farmster-server/setup/supervisor/conf.d/celerybeat.conf /etc/supervisor/conf.d/celerybeat.conf
+$ sudo cp ~/farmster/farmster-server/setup/supervisor/conf.d/celeryd.conf /etc/supervisor/conf.d/celeryd.conf
+$ sudo cp ~/farmster/farmster-server/setup/supervisor/conf.d/flower.conf /etc/supervisor/conf.d/flower.conf
+$ sudo supervisorctl restart all
+

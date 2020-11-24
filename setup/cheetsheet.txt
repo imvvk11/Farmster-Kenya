@@ -1,0 +1,48 @@
+# django migrations
+python manage.py makemigrations
+python manage.py migrate
+
+# cron tasks
+crontab -l
+crontab -r\
+
+# store git credentials
+git config credential.helper store
+
+# psql
+psql farmster_prod -U farmster_admin
+ 'PASSWORD': 'TCLaEfQyc9rBK4fS'
+
+# dump sql
+pg_dump farmster_prod -U farmster_admin --file=farmster_prod.sql --encoding=UTF8 --clean
+# pg_dump -U farmster_admin --encoding=UTF8 --clean farmster_dev > farmster_dev.sql
+# pass: Y4FxzhLZSuwkpGdJ
+
+Mac:
+psql farmster_dev < /Users/doronfeldman/Downloads/farmster_prod.sql
+
+Windows:
+cd to dump location
+psql -U farmster_admin -d farmster_prod -f farmster_prod.sql
+
+
+
+# translations
+django-admin makemessages -l en -l fr -e html -e py --ignore=static/
+django-admin compilemessages
+
+# pip install
+pip freeze > ./setup/requirements.txt
+
+# generate model graph
+./manage.py graph_models farmster_server app_auth -o ./docs/farmster-entities.pdf
+
+# Deploy to gcloud
+1. change to development_gcp
+2. ./cloud_sql_proxy -instances=farmster-ee483:us-central1:farmster-prod-db=tcp:5433
+3. ./manage.py migrate
+4. gcloud app deploy
+
+OPTIONAL gcloud app deploy cron.yaml
+OPTIONAL gcloud components update
+

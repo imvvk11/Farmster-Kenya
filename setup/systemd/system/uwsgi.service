@@ -1,0 +1,14 @@
+[Unit]
+Description=uWSGI Emperor service
+
+[Service]
+Environment=PYTHONHASHSEED=0
+ExecStartPre=/bin/bash -c 'mkdir -p /run/uwsgi; chown mixin.co.il:www-data /run/uwsgi'
+ExecStart=/usr/local/bin/uwsgi --emperor /etc/uwsgi/sites
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target

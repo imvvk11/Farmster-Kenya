@@ -1,0 +1,28 @@
+map $sent_http_content_type $expires {
+    default                    off;
+    text/html                  epoch;
+    text/css                   max;
+    application/javascript     max;
+    ~image/                    max;
+}
+
+server {
+    #  expires $expires;
+    listen 80;
+
+    server_name farmster.mixinsoftware.com;
+    client_max_body_size 10M;
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        add_header "Access-Control-Allow-Origin" "*";
+        root /home/mixin.co.il/farmster/farmster-server/farmster_server/;
+    }
+    location /media/ {
+        add_header "Access-Control-Allow-Origin" "*";
+        root /home/mixin.co.il/farmster/farmster-server/farmster_server/;
+    }
+    location / {
+        include         uwsgi_params;
+        uwsgi_pass      unix:/run/uwsgi/farmster-server.sock;
+    }
+}
